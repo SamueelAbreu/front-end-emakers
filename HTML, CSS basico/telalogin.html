@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="telalogin.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <title>TelaLogin</title>
+</head>
+<body>
+     <div class="div-principal-tela-login">
+          
+          <div class="div-esquerda-tela-login">
+               <img src="img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false" />
+               <h1 class="entre">Entre em Sua Conta</h1>
+               <form action="" autocomplete="off" class="form-login">
+                    <fieldset>
+                         <label for="email" class="form-email">E-mail:</label>
+                         <input type="email" name="email" />
+                         <label for="password" class="form-password">Senha:</label>
+                         <div class="password-container">
+                              <input type="password" name="password" id="password" />
+                              <i class="bi bi-eye-fill" id="btn-password" onclick="mostrarSenha()"></i>
+                         </div>
+                         <button type="submit" class="form-button-entrar">Entrar</button>
+                    </fieldset>
+               </form>
+          </div>
+          <div class="div-direita-tela-login">
+               <div class="div-direita-conteudo">
+                    <h1>Novo Aqui?</h1>
+                    <p>Registre-se e venha fazer parte da maior rede social!</p>
+                    <button class="button-registrar">Registrar-se</button>
+               </div>
+          </div>
+     </div>
+     
+</body>
+
+</html>
