@@ -1,0 +1,166 @@
+:root {
+     --roxo: #5e2075;
+     --laranja: #fe690e;
+     --branco: #FEFCFF;
+     --cinzaclaro: #EFEFEF;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: "Roboto", sans-serif;
+     background-color: var(--branco);
+     min-height: 100vh;
+}
+
+
+
+@media screen and (max-width: 360px){
+     .top-tela-registro {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
+          height: 33vh;
+          width: 100%;     
+     }
+     .top-tela-registro h1{
+          color: transparent;
+          position: relative;
+     }
+     .top-tela-registro img{
+          scale: 0.5;
+          position: relative;
+          top: 16%;
+     }
+
+
+
+
+
+
+     .bot-tela-registro {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--branco);
+          height: 67vh;
+          width: 100%;     
+     }
+
+     .bot-tela-registro h1{
+          color: var(--roxo);
+          font-size: 2em;
+          margin-bottom: 5%;
+     }
+     .bot-tela-registro label{
+          font-size: 1.2em;
+          color: var(--roxo);
+          padding-left: 5px;
+     }
+
+     .bot-tela-registro input{
+          width: 50%;
+          margin-bottom: 4%;
+          padding-left: 10px;
+          background-color: var(--cinzaclaro);
+          height: 4%;
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .bot-tela-registro button{
+          width: 50%;
+          margin: 0 25%;
+          height: 2.5em;
+          cursor: pointer;
+          color: white;
+          background-color: var(--roxo);
+          font-size: 1em;
+          padding: .7em;
+          border: none;
+          border-radius: 50px;
+     }
+
+}
+
+
+@media screen and (min-width: 361px){
+     .direita-tela-registro {
+          display: flex;
+          float: right;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
+          min-height: 100vh;
+          width: 65%;     
+     }
+
+     .direita-tela-registro h1{
+          color: var(--branco);
+          font-size: 4em;
+          text-align: center;
+          text-wrap: wrap;
+          margin: 2em;
+     }
+
+
+
+
+
+
+     .esquerda-tela-registro {
+          display: flex;
+          float: left;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          background-color: var(--branco);
+          min-height: 100vh; 
+          width: 35%;    
+     }
+
+
+     .esquerda-tela-registro h1{
+          color: var(--roxo);
+          font-size: 4em;
+          margin-bottom: 10%;
+     }
+     .esquerda-tela-registro label{
+          font-size: 2em;
+          color: var(--roxo);
+          padding-left: 15px;
+     }
+
+     .esquerda-tela-registro input{
+          width: 60%;
+          margin-bottom: 10%;
+          padding-left: 10px;
+          background-color: var(--cinzaclaro);
+          height: 3em;
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .esquerda-tela-registro button{
+          width: 50%;
+          margin: 0 25%;
+          height: 2.5em;
+          cursor: pointer;
+          color: white;
+          background-color: var(--roxo);
+          font-size: 1em;
+          padding: .7em;
+          border: none;
+          border-radius: 50px;
+     }
+}
