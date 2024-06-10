@@ -15,7 +15,7 @@ body {
 
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 400px){
      .top-tela-registro {
           display: flex;
           flex-direction: column;
@@ -30,10 +30,13 @@ body {
           position: relative;
      }
      .top-tela-registro img{
-          scale: 0.5;
-          position: relative;
-          top: 16%;
+          scale: .6;
+          position: absolute;
+          max-width: 80%;
+          max-height: 80%;
      }
+
+
 
 
 
@@ -51,10 +54,29 @@ body {
      }
 
      .bot-tela-registro h1{
+          max-width: 80%;
           color: var(--roxo);
           font-size: 2em;
           margin-bottom: 5%;
      }
+     .bot-tela-registro form{
+          width: 80%;    
+          border: none;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+     }
+
+     .bot-tela-registro fieldset{
+          padding: 0;
+          width: 80%;    
+          border: none;
+          display: flex;
+          float: left;
+          flex-direction: column;
+     }
+
      .bot-tela-registro label{
           font-size: 1.2em;
           color: var(--roxo);
@@ -62,11 +84,11 @@ body {
      }
 
      .bot-tela-registro input{
-          width: 50%;
+          width: 95%;
           margin-bottom: 4%;
-          padding-left: 10px;
+          padding-left: 4%;
           background-color: var(--cinzaclaro);
-          height: 4%;
+          height: 2em;
           color: var(--roxo);
           font-size: 1.2em;
           border: none;
@@ -75,8 +97,8 @@ body {
      }
 
      .bot-tela-registro button{
-          width: 50%;
-          margin: 0 25%;
+          width: 80%;
+          margin: 0 auto;
           height: 2.5em;
           cursor: pointer;
           color: white;
@@ -87,10 +109,88 @@ body {
           border-radius: 50px;
      }
 
+     .gender-image {
+          display: block;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          
+     }
+
+     .div-select-estiloso,
+     .input-type-image-estiloso {
+          width: 100%;
+     }
+
+     .div-select-estiloso label,
+     .input-type-image-estiloso label {
+          display: block;    
+     }
+
+     .div-select-estiloso select{
+          -webkit-appearance: none;
+          -maz-appereance: none;
+          -ms-appearece: none;
+          appearance: none;
+          outline: 0;
+          width: 100%;
+          margin-bottom: 4%;
+          padding-left: 10px;
+          background-color: var(--cinzaclaro);
+          height: 2em;
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);   
+     }
+     
+
+     .input-type-image-estiloso .picture-input{
+          display: none;
+     }
+
+     .input-type-image-estiloso .picture-image{
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          cursor: pointer;
+          width: 96%;
+          height: 2em;
+          margin-bottom: 4%;
+          padding-left: 4%;
+          background-color: var(--cinzaclaro);
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .esquerda-tela-registro a{
+          font-size: 1.2em;
+          color: var(--roxo);
+          padding: 4%;
+          text-decoration: none;
+     }
+     
 }
 
 
-@media screen and (min-width: 361px){
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 400px){
      .direita-tela-registro {
           display: flex;
           float: right;
@@ -98,17 +198,32 @@ body {
           justify-content: center;
           align-items: center;
           background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
-          min-height: 100vh;
-          width: 65%;     
+          height: 100vh;
+          width: 60%; 
+     }
+
+     .direita-tela-registro img{
+          scale: 1;
+          position: relative;
+          max-width: 80%;
      }
 
      .direita-tela-registro h1{
+          max-width: 80%;
           color: var(--branco);
-          font-size: 4em;
+          font-size: 3.2em;
           text-align: center;
           text-wrap: wrap;
-          margin: 2em;
      }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -123,23 +238,91 @@ body {
           align-items: center;
           background-color: var(--branco);
           min-height: 100vh; 
-          width: 35%;    
+          width: 40%;    
      }
 
 
      .esquerda-tela-registro h1{
           color: var(--roxo);
           font-size: 4em;
-          margin-bottom: 10%;
+          margin: 0;
      }
-     .esquerda-tela-registro label{
+
+     .esquerda-tela-registro form{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70%;
+     }
+
+     .esquerda-tela-registro fieldset{
+          border: none;
+          width: 100%;
+          display: block;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .esquerda-tela-registro fieldset label{
           font-size: 2em;
           color: var(--roxo);
-          padding-left: 15px;
+          padding-left: 4%;
      }
 
      .esquerda-tela-registro input{
-          width: 60%;
+          width: 94%;
+          margin-bottom: 5%;
+          padding-left: 5%;
+          background-color: var(--cinzaclaro);
+          height: 3em;
+          color: var(--roxo);
+          font-size: 2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .esquerda-tela-registro button{
+          background-color: var(--roxo);
+          width: 80%;
+          height: 2em;
+          cursor: pointer;
+          color: white;
+          font-size: 1.5em;
+          padding: 1.2em;
+          border: none;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+     }
+     
+     .gender-image {
+          display: flex;
+          justify-content: space-between;
+          width: 96%;
+     }
+
+     .div-select-estiloso,
+     .input-type-image-estiloso {
+          width: 48%;
+     }
+
+     .div-select-estiloso label,
+     .input-type-image-estiloso label {
+          display: inline-block;
+          margin-bottom: 10px;
+     }
+
+     .div-select-estiloso select{
+          -webkit-appearance: none;
+          -maz-appereance: none;
+          -ms-appearece: none;
+          appearance: none;
+          outline: 0;
+          width: 100%;
           margin-bottom: 10%;
           padding-left: 10px;
           background-color: var(--cinzaclaro);
@@ -148,19 +331,35 @@ body {
           font-size: 1.2em;
           border: none;
           border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);   
+     }
+     
+
+     .input-type-image-estiloso .picture-input{
+          display: none;
+     }
+
+     .input-type-image-estiloso .picture-image{
+          display: flex;
+          justify-content: left;
+          align-items: center;
+          cursor: pointer;
+          width: 100%;
+          height: 3em;
+          margin-bottom: 10%;
+          padding-left: 10px;
+          background-color: var(--cinzaclaro);
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
      }
 
-     .esquerda-tela-registro button{
-          width: 50%;
-          margin: 0 25%;
-          height: 2.5em;
-          cursor: pointer;
-          color: white;
-          background-color: var(--roxo);
-          font-size: 1em;
-          padding: .7em;
-          border: none;
-          border-radius: 50px;
+     .esquerda-tela-registro a{
+          font-size: 1.7em;
+          color: var(--roxo);
+          text-decoration: none;
      }
+
 }
