@@ -10,16 +10,18 @@ body {
      padding: 0;
      font-family: "Roboto", sans-serif;
      background-color: var(--branco);
+     min-height: 100vh;
 }
 
 
 
-@media screen and (max-width: 360px){
+@media screen and (max-width: 550px){
      .div-principal-tela-login {
           display: flex;
           flex-direction: column;
           align-items: center;
-          height: 100vh;
+          height: 50vh;
+          width: 100%;
      }
 
      .div-esquerda-tela-login {
@@ -27,9 +29,6 @@ body {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-     }
-
-     .div-esquerda-tela-login {
           width: 100%;
           height: 50vh;
           background-color: white;
@@ -37,7 +36,7 @@ body {
      }
 
      .logo-emakers {
-          width: 60%;
+          width: 50%;
           position: fixed;
           top: 5px;
      }
@@ -69,13 +68,13 @@ body {
      .form-login label{
           font-size: 1.2em;
           color: var(--roxo);
-          padding-left: 5px;
+          padding-left: 4%;
      }
 
      .form-login fieldset input{
-          width: 100%;
-          margin-bottom: 3em;
-          padding-left: 10px;
+          width: 96%;
+          margin-bottom: 15%;
+          padding-left: 4%;
           background-color: var(--cinzaclaro);
           height: 2em;
           color: var(--roxo);
@@ -105,8 +104,8 @@ body {
      .password-container i {
           position: absolute;
           font-size: 1.6em;
-          right: 2%;
-          top: 20%;
+          right: 4%;
+          top: 22.5%;
           transform: translateY(-50%);
           cursor: pointer;
      }
@@ -125,7 +124,8 @@ body {
           justify-content: center;
      }
      .div-direita-conteudo{
-          width: 60%;
+          width: 100%;
+          height: 90%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -133,22 +133,28 @@ body {
           text-align: center;
      }
      .div-direita-conteudo h1{
+          max-width: 80%;
           font-size: 3em;
-          margin: 0;
+          margin: 4%;
+          padding: 4%;
      }
 
      .div-direita-conteudo p{
-          font-size: 3em;
+          max-width: 80%;
+          font-size: 200%;
           word-wrap: break-word;
+          margin: 4%;
+          padding: 4%;
      }
 
      .div-direita-conteudo .button-registrar{
           width: 60%;
           height: 2.5em;
-          margin: 0 25%;
+          margin: 4% 25%;
           cursor: pointer;
+          color: white;
           background-color: var(--laranja);
-          font-size: 1em;
+          font-size: 1.2em;
           padding: .7em;
           border: none;
           border-radius: 50px;
@@ -180,19 +186,20 @@ body {
 
 
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 550px) {
      /* PARTE ESQUERDA DA PAGINA */
      .div-esquerda-tela-login {
-          background-color: white;
+          background-color: var(--branco);
           width: 55%;
-          float: left;
-          height: 100vh;
+          min-height: 100vh;
           display: flex;
           flex-direction: column;
+          float: left;
           justify-content: center;
           align-items: center;
      }
      .logo-emakers {
+          scale: 1;
           width: 25%;
           position: fixed;
           top: 10px;
@@ -200,38 +207,38 @@ body {
      }
      
      .entre {
+          text-align: center;
           font-size: 4em;
           color: var(--roxo);
           font-weight: bold;
-          margin-top: 1.5em;
-          margin-bottom: 1em;
+          margin: 4%;
+          padding: 4%;
      }
 
      .form-login{
           display: flex;
           align-items: center;
           justify-content: center;
-          width: 100%;
+          width: 70%;
      }
      
      .form-login fieldset {
           border: none;
-          width: 85%;
+          width: 100%;
           display: block;
           align-items: center;
           justify-content: center;
-          padding-left: 36px;
      }
 
      .form-login label{
           font-size: 2em;
           color: var(--roxo);
-          padding-left: 20px;
+          padding-left: 4%;
      }
 
      .form-login fieldset input{
-          width: 90%;
-          margin-bottom: 2em;
+          width: 94%;
+          margin-bottom: 5%;
           padding-left: 5%;
           background-color: var(--cinzaclaro);
           height: 3em;
@@ -243,20 +250,21 @@ body {
      }
 
      .form-button-entrar {
-          width: 50%;
-          height: 3em;
+          background-color: var(--roxo);
+          width: 80%;
+          height: 2em;
           cursor: pointer;
           color: white;
-          background-color: var(--roxo);
-          font-size: 2em;
+          font-size: 1.5em;
+          padding: 1.2em;
           border: none;
           border-radius: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
-          margin: auto 27% auto 22%;     
+          margin: auto;
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
-          
+
      }
      .password-container {
           position: relative;
@@ -287,7 +295,7 @@ body {
           background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
      }
      .div-direita-conteudo{
-          width: 80%;
+          width: 100%;
           display: flex;
           flex-direction: column;
           align-items: center;
@@ -296,30 +304,33 @@ body {
      }
      
      .div-direita-tela-login h1 {
+          max-width: 80%;
           font-size: 4em;
           font-weight: bold;
-          margin-top: 1.5em;
+          margin: 4%;
+          padding: 4%;
      }
 
      .div-direita-tela-login p {
-          font-size: 3.8em;
-          padding: .8em 0 .8em 0;
+          max-width: 80%;
+          font-size: 4em;
+          margin: 4%;
+          padding: 4%;
      }
 
      .button-registrar {
           background-color: var(--laranja);
           width: 60%;
-          height: 3em;
+          height: 2em;
           cursor: pointer;
           color: white;
-          font-size: 2em;
+          font-size: 1.5em;
           border: none;
           border-radius: 50px;
           display: flex;
           justify-content: center;
           align-items: center;
           margin: auto;
-          
           box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
      }
 }
