@@ -12,9 +12,7 @@ body {
      background-color: var(--branco);
      
 }
-
-
-
+/* versão para celular */
 @media screen and (max-width: 550px){
      .div-principal-tela-login {
           display: flex;
@@ -23,7 +21,7 @@ body {
           min-height: 50vh;
           width: 100%;
      }
-
+     /* div superior */
      .div-esquerda-tela-login {
           display: flex;
           flex-direction: column;
@@ -110,9 +108,7 @@ body {
           cursor: pointer;
      }
      
-     
-     /* div direita */
-
+     /* div inferior */
      .div-direita-tela-login {
           min-height: 50vh;
           width: 100%;
@@ -161,7 +157,7 @@ body {
      }
 }
 
-
+     /* versão para desktop */
 @media screen and (min-width: 550px) {
      /* PARTE ESQUERDA DA PAGINA */
      .div-esquerda-tela-login {

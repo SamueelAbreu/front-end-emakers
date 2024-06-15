@@ -4,18 +4,18 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 function TelaLogin() {
-    const navigate = useNavigate();
+    const navigate = useNavigate(); // Define a função de navegação entre as telas
 
-    const handleRegistrarClick = () => {
+    const handleRegistrarClick = () => { // Define a função de clique no botão de registro
         navigate("/registro");
     }
 
-    const handleEntrarClick = () => {
+    const handleEntrarClick = () => { // Define a função de clique no botão de entrar
         navigate("/home");
     }
 
-    return (
-        <div class="div-principal-tela-login">
+    return ( 
+        <div class="div-principal-tela-login">  {/*estrutura da tela de login */}
             <div class="div-esquerda-tela-login">
                 <img src="src/img/brancologo.png" alt="Logo Emakers" class="logo-emakers" draggable="false" />
                 <div class="div-esquerda-conteudo"></div>
@@ -26,7 +26,7 @@ function TelaLogin() {
                         <input type="email" name="email" />
                         <label for="password" class="form-password">Senha:</label>
                         <div class="password-container">
-                            <input type="password" name="password" id="password" />
+                            <input type="password" name="password" id="password1" />
                             <i class="bi bi-eye-fill" id="btn-password" onclick="mostrarSenha()"></i>
                         </div>
                         <button type="submit" class="form-button-entrar" onClick={handleEntrarClick}>Entrar</button>

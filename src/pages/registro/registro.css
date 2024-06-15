@@ -12,8 +12,10 @@ body {
      background-color: var(--branco);
      min-height: 100vh;
 }
-
+     /* versão para celular */
 @media screen and (max-width: 550px) {
+     /* Parte do topo da tela de registro */
+
      .top-tela-registro {
           display: flex;
           flex-direction: column;
@@ -141,7 +143,6 @@ body {
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
      }
 
-
      .input-type-image-estiloso .picture-input {
           display: none;
      }
@@ -172,7 +173,10 @@ body {
 
 }
 
+
+     /* versão para desktop */
 @media screen and (min-width: 550px) {
+     /* Parte direita da tela de registro */
      .direita-tela-registro {
           display: flex;
           float: right;
@@ -208,7 +212,6 @@ body {
           min-height: 100vh;
           width: 40%;
      }
-
 
      .esquerda-tela-registro h1 {
           color: var(--roxo);
@@ -301,7 +304,6 @@ body {
           border-radius: 50px;
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
      }
-
 
      .input-type-image-estiloso .picture-input {
           display: none;

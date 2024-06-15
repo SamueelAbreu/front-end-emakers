@@ -20,7 +20,7 @@
 
 
 
-/* Responsive Design */
+/* para celular*/
 @media screen and (max-width: 800px) {
 
      /* Header */
@@ -68,7 +68,6 @@
           margin: auto;
           height: 221px;
           border-bottom: 3px solid var(--laranja);
-
      }
 
      .profile img.icon {
@@ -104,6 +103,7 @@
           padding: 0 30px;
      }
 
+     /* Footer */
      .footer-home {
           width: 90%;
           margin: auto;
@@ -112,7 +112,6 @@
           flex-direction: column;
           justify-content: center;
           align-items: center;
-
      }
 
      .footer-home img {
@@ -129,10 +128,7 @@
      }
 }
 
-
-
-
-
+/* para desktop*/
 @media screen and (min-width: 800px) {
 
      /* Header */
@@ -146,7 +142,6 @@
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
-
      }
 
      /* Navbar */
@@ -238,6 +233,7 @@
           margin: 0;
      }
 
+     /* Footer */
      .footer-home {
           border-top: 3px solid var(--laranja);
           max-width: 80%;
@@ -255,7 +251,6 @@
           height: auto;
           transition: transform 0.3s ease;
           margin-top: 4%;
-
           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
           cursor: pointer;
      }

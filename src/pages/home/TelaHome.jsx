@@ -1,9 +1,9 @@
 import React from "react";
 import "./home.css";
 
-function TelaHome() {
+function TelaHome() { 
      return (
-          <div>
+          <div> {/*estrutura da tela de home */}
           <div class="body">
                <header className="header-home">
                     <nav className="navbar">

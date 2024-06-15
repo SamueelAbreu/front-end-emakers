@@ -3,17 +3,17 @@ import "./registro.css";
 import { useNavigate } from "react-router-dom";
 
 function TelaRegistro() {
-  const navigate = useNavigate();
+  const navigate = useNavigate(); // Cria uma função de navegação
 
-  const handleEntrarClick = () => {
+  const handleEntrarClick = () => { // Define a função de clique no botão de entrar
     navigate("/home");
   }
 
-  const handleLoginClick = () => {
+  const handleLoginClick = () => { // Define a função de clique no botão de login
     navigate("/login");
   }
   return (
-    <div>
+    <div> {/* estrutura da tela de registro */}
       <div class="top-tela-registro direita-tela-registro">
         <img src="src/img/logo.png" alt="" />
         <h1>Venha fazer parte da maior rede social também!</h1>
@@ -23,13 +23,13 @@ function TelaRegistro() {
         <form>
           <fieldset>
             <label for="name">Nome</label>
-            <input type="text" id="name" />
+            <input type="text" id="name2" />
             <label for="email">E-mail</label>
-            <input type="email" id="email" />
+            <input type="email" id="email2" />
             <label for="password">Senha</label>
-            <input type="password" id="password" />
+            <input type="password" id="password2" />
             <label for="password">Confirmar senha</label>
-            <input type="password" id="password" />
+            <input type="password" id="password3" />
 
             <div class="gender-image">
               <div class="div-select-estiloso">
