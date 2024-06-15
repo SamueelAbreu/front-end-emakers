@@ -123,9 +123,7 @@
           cursor: pointer;
      }
 
-     .footer-home img:hover {
-          transform: scale(1.1);
-     }
+
 }
 
 /* para desktop*/
@@ -178,10 +176,6 @@
 
      .navbar a {
           text-decoration: none;
-     }
-
-     .navbar a:hover {
-          transition: 1s ease;
      }
 
      .navbar ul i {
@@ -255,7 +249,4 @@
           cursor: pointer;
      }
 
-     .footer-home img:hover {
-          transform: scale(1.1);
-     }
 }

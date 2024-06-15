@@ -94,6 +94,11 @@ body {
           border: none;
           border-radius: 50px;
      }
+
+     .form-login fieldset button:hover{
+          transition: linear 0.3s ease;
+          background-color: #441555;
+     }
      .password-container {
           position: relative;
           width: 100%;
