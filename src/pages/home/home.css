@@ -1,0 +1,266 @@
+/* Basic Reset */
+:root {
+     --roxo: #5e2075;
+     --laranja: #fe690e;
+     --branco: #FEFCFF;
+     --cinzaclaro: #EFEFEF;
+     --cinzaescuro: #1E1E1E;
+}
+
+.body {
+     margin: 0;
+     padding: 0;
+     font-family: "Roboto", sans-serif;
+     background-color: var(--branco);
+     width: 100%;
+     min-width: 300px;
+     min-height: 100vh;
+     color: var(--cinzaescuro);
+}
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 800px) {
+
+     /* Header */
+     .header-home {
+          position: relative;
+          width: 100%;
+          height: 221px;
+          overflow: hidden;
+          border-bottom: 3px solid var(--laranja);
+          background-image: url("src/img/fundo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+     }
+
+     /* Navbar */
+     .navbar {
+          position: relative;
+          top: 0;
+          padding: 0 3%;
+          width: 100%;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .navbar ul {
+          display: none;
+     }
+
+     .mobile-menu i {
+          padding-right: 25px;
+          font-size: 51px;
+          color: var(--branco);
+          cursor: pointer;
+     }
+
+     /* Main */
+     .main-home {
+          text-align: center;
+          padding-top: 20px;
+          position: relative;
+          width: 90%;
+          margin: auto;
+          height: 221px;
+          border-bottom: 3px solid var(--laranja);
+
+     }
+
+     .profile img.icon {
+          width: 275px;
+          height: 275px;
+          border-radius: 50%;
+          box-sizing: border-box;
+          border: 3px solid var(--laranja);
+          position: absolute;
+          top: -137px;
+          left: 50%;
+          transform: translateX(-50%);
+     }
+
+     .profile img.icon {
+          width: 180px;
+          height: auto;
+          top: -90px;
+     }
+
+     .profile h1.nome {
+          margin-top: 70px;
+          font-size: 1.7em;
+          font-weight: 100;
+          margin-bottom: 0;
+          padding: 0 30px;
+     }
+
+     .profile h3.biografia {
+          font-size: 1.3em;
+          font-weight: 100;
+          margin-top: 0;
+          padding: 0 30px;
+     }
+
+     .footer-home {
+          width: 90%;
+          margin: auto;
+          margin-top: 20px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+
+     }
+
+     .footer-home img {
+          width: 200px;
+          height: 200px;
+          transition: transform 0.3s ease;
+          margin: 20px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+          cursor: pointer;
+     }
+
+     .footer-home img:hover {
+          transform: scale(1.1);
+     }
+}
+
+
+
+
+
+@media screen and (min-width: 800px) {
+
+     /* Header */
+     .header-home {
+          position: relative;
+          width: 100%;
+          height: 30vh;
+          overflow: hidden;
+          border-bottom: 3px solid var(--laranja);
+          background-image: url("src/img/fundo.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+
+     }
+
+     /* Navbar */
+     .navbar {
+          position: relative;
+          top: 0;
+          padding: 0 3%;
+          width: 100%;
+          height: 120px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+     }
+
+     .navbar .mobile-menu {
+          display: none;
+     }
+
+     .navbar img {
+          width: 250px;
+          height: auto;
+     }
+
+     .navbar ul {
+          padding: 0;
+          margin-right: 6%;
+          width: 200px;
+          list-style: none;
+          display: inline-flex;
+          justify-content: space-around;
+          align-items: center;
+          gap: 10%;
+     }
+
+     .navbar a {
+          text-decoration: none;
+     }
+
+     .navbar a:hover {
+          transition: 1s ease;
+     }
+
+     .navbar ul i {
+          font-size: 25px;
+          padding: 7px;
+          color: var(--cinzaescuro);
+          background-color: var(--cinzaclaro);
+          border-radius: 50%;
+     }
+
+     .navbar ul img {
+          width: 42px;
+          height: 42px;
+          border-radius: 50%;
+     }
+
+     /* Main */
+     .main-home {
+          text-align: left;
+          padding-top: 20px;
+          position: relative;
+          width: 100%;
+     }
+
+     .profile img.icon {
+          width: 275px;
+          height: 275px;
+          border-radius: 50%;
+          border: 5px solid var(--laranja);
+          position: absolute;
+          top: -137px;
+          left: 20%;
+          transform: translateX(-50%);
+     }
+
+     .profile h1.nome {
+          width: 60%;
+          float: right;
+          font-size: 2.5em;
+          font-weight: 100;
+          margin: 0;
+     }
+
+     .profile h3.biografia {
+          width: 60%;
+          float: right;
+          font-size: 1.5em;
+          font-weight: 100;
+          margin: 0;
+     }
+
+     .footer-home {
+          border-top: 3px solid var(--laranja);
+          max-width: 80%;
+          margin: 200px auto;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          gap: 3%;
+     }
+
+     .footer-home img {
+          width: 30%;
+          max-width: 320px;
+          height: auto;
+          transition: transform 0.3s ease;
+          margin-top: 4%;
+
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+          cursor: pointer;
+     }
+
+     .footer-home img:hover {
+          transform: scale(1.1);
+     }
+}

@@ -1,0 +1,312 @@
+:root {
+     --roxo: #5e2075;
+     --laranja: #fe690e;
+     --branco: #FEFCFF;
+     --cinzaclaro: #EFEFEF;
+}
+
+body {
+     margin: 0;
+     padding: 0;
+     font-family: "Roboto", sans-serif;
+     background-color: var(--branco);
+     
+}
+
+
+
+@media screen and (max-width: 550px){
+     .div-principal-tela-login {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-height: 50vh;
+          width: 100%;
+     }
+
+     .div-esquerda-tela-login {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          width: 100%;
+          height: 50vh;
+          background-color: white;
+          color: var(--roxo);
+     }
+
+     .logo-emakers {
+          width: 50%;
+          position: fixed;
+          top: 5px;
+     }
+
+     .entre {
+          word-wrap: break-word;
+          margin-top: 2em;
+          margin-bottom: .5em;
+          text-align: center;
+          font-size: 2.5em;
+          color: var(--roxo);
+          font-weight: bold;
+          width: 50%;
+          
+     }
+
+     .form-login {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          
+     }
+
+     .form-login fieldset{
+          width: 70%;
+          border: none;
+     }
+     .form-login label{
+          font-size: 1.2em;
+          color: var(--roxo);
+          padding-left: 4%;
+     }
+
+     .form-login fieldset input{
+          width: 96%;
+          margin-bottom: 15%;
+          padding-left: 4%;
+          background-color: var(--cinzaclaro);
+          height: 2em;
+          color: var(--roxo);
+          font-size: 1.2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .form-login fieldset button{
+          width: 50%;
+          margin: 0 25%;
+          height: 2.5em;
+          cursor: pointer;
+          color: white;
+          background-color: var(--roxo);
+          font-size: 1em;
+          padding: .7em;
+          border: none;
+          border-radius: 50px;
+     }
+     .password-container {
+          position: relative;
+          width: 100%;
+     }
+     
+     .password-container i {
+          position: absolute;
+          font-size: 1.6em;
+          right: 4%;
+          top: 22.5%;
+          transform: translateY(-50%);
+          cursor: pointer;
+     }
+     
+     
+     /* div direita */
+
+     .div-direita-tela-login {
+          min-height: 50vh;
+          width: 100%;
+          background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
+          box-sizing: border-box;
+          border-top: 5px solid var(--laranja); 
+          display: flex;
+          align-items: center;
+          justify-content: center;
+     }
+     .div-direita-conteudo{
+          width: 100%;
+          height: 90%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          text-align: center;
+     }
+     .div-direita-conteudo h1{
+          max-width: 80%;
+          font-size: 3em;
+          margin: 4%;
+          padding: 4%;
+     }
+
+     .div-direita-conteudo p{
+          max-width: 80%;
+          font-size: 200%;
+          word-wrap: break-word;
+          margin: 4%;
+          padding: 4%;
+     }
+
+     .div-direita-conteudo .button-registrar{
+          width: 60%;
+          height: 2.5em;
+          margin: 4% 25%;
+          cursor: pointer;
+          color: white;
+          background-color: var(--laranja);
+          font-size: 1.2em;
+          padding: .7em;
+          border: none;
+          border-radius: 50px;
+     }
+}
+
+
+@media screen and (min-width: 550px) {
+     /* PARTE ESQUERDA DA PAGINA */
+     .div-esquerda-tela-login {
+          background-color: var(--branco);
+          width: 55%;
+          min-height: 100vh;
+          display: flex;
+          flex-direction: column;
+          float: left;
+          justify-content: center;
+          align-items: center;
+     }
+     .logo-emakers {
+          scale: 1;
+          width: 25%;
+          position: fixed;
+          top: 10px;
+          left: 10px;
+     }
+     
+     .entre {
+          text-align: center;
+          font-size: 4em;
+          color: var(--roxo);
+          font-weight: bold;
+          margin: 4%;
+          padding: 4%;
+     }
+
+     .form-login{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 70%;
+     }
+     
+     .form-login fieldset {
+          border: none;
+          width: 100%;
+          display: block;
+          align-items: center;
+          justify-content: center;
+     }
+
+     .form-login label{
+          font-size: 2em;
+          color: var(--roxo);
+          padding-left: 4%;
+     }
+
+     .form-login fieldset input{
+          width: 94%;
+          margin-bottom: 7%;
+          padding-left: 5%;
+          background-color: var(--cinzaclaro);
+          height: 2.4em;
+          color: var(--roxo);
+          font-size: 2em;
+          border: none;
+          border-radius: 50px;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+     }
+
+     .form-button-entrar {
+          background-color: var(--roxo);
+          width: 80%;
+          height: 2em;
+          cursor: pointer;
+          color: white;
+          font-size: 1.5em;
+          padding: 1.2em;
+          border: none;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+
+     }
+     .password-container {
+          position: relative;
+          width: 100%;
+     }
+     
+     .password-container i {
+          position: absolute;
+          font-size: 3em;
+          right: 7%;
+          top: 37%;
+          transform: translateY(-50%);
+          cursor: pointer;
+          color: var(--roxo);
+     }
+
+     /* PARTE DIREITA DA PAGINA */
+     .div-direita-tela-login {
+          width: 45%;
+          height: 100vh;
+          float: right;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-sizing: border-box;
+          border-left: 5px solid var(--laranja);
+          background: linear-gradient(to bottom, #75206c 50%, var(--laranja));
+     }
+     .div-direita-conteudo{
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          color: white;
+          text-align: center;
+     }
+     
+     .div-direita-tela-login h1 {
+          max-width: 80%;
+          font-size: 4em;
+          font-weight: bold;
+          margin: 4%;
+          padding: 4%;
+     }
+
+     .div-direita-tela-login p {
+          max-width: 80%;
+          font-size: 4em;
+          margin: 4%;
+          padding: 4%;
+     }
+
+     .button-registrar {
+          background-color: var(--laranja);
+          width: 60%;
+          height: 2em;
+          cursor: pointer;
+          color: white;
+          font-size: 1.5em;
+          border: none;
+          border-radius: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin: auto;
+          box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+     }
+}
